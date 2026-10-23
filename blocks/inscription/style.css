@@ -1,0 +1,52 @@
+.cawl-checkout-form {
+	max-width: 32rem;
+	margin-inline: auto;
+}
+
+.cawl-checkout-form__error {
+	padding: 0.75rem 1rem;
+	border: 2px solid #8a1f11;
+	background: #fdf0ee;
+	color: #5c1209;
+}
+
+.cawl-checkout-form__field {
+	margin: 0 0 1rem;
+}
+
+.cawl-checkout-form label {
+	display: block;
+	margin-bottom: 0.25rem;
+	font-weight: 600;
+}
+
+.cawl-checkout-form input[type="text"],
+.cawl-checkout-form input[type="email"] {
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 44px;
+	padding: 0.5rem 0.75rem;
+	border: 1px solid #50575e;
+	border-radius: 4px;
+	font: inherit;
+}
+
+.cawl-checkout-form button[type="submit"] {
+	min-width: 44px;
+	min-height: 44px;
+	padding: 0.5rem 1.5rem;
+	border: 2px solid #1d2327;
+	border-radius: 4px;
+	background: #1d2327;
+	color: #fff;
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.cawl-checkout-form input:focus-visible,
+.cawl-checkout-form button:focus-visible {
+	outline: 3px solid #000;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 5px #fff;
+}

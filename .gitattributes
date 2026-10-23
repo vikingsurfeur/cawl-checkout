@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.png binary
+
+# Une archive de livraison (git archive) n'embarque ni les tests ni la configuration PHPUnit.
+/tests export-ignore
+/phpunit.xml.dist export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore

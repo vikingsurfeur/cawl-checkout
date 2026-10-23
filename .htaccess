@@ -1,0 +1,6 @@
+# Accès web direct refusé (403) aux dépendances, aux tests, à l'historique git et aux fichiers d'outillage.
+# RedirectMatch (mod_alias, AllowOverride FileInfo, déjà requis par les permaliens) plutôt que Require : la règle
+# s'applique même quand AuthConfig n'est pas autorisé. Insensible à la casse : sur un montage insensible à la casse,
+# /VENDOR/ atteindrait le même dossier.
+RedirectMatch 403 (?i)/(\.git|vendor|tests)(/|$)
+RedirectMatch 403 (?i)/(composer\.(json|lock)|phpunit\.xml(\.dist)?)$

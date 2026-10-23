@@ -1,0 +1,9 @@
+# Dépendances Composer : installées à la livraison (composer install --no-dev), jamais versionnées.
+/vendor/
+# Caches PHPUnit.
+/.phpunit.cache/
+.phpunit.result.cache
+# Secrets locaux (identifiants CAWL_*) : jamais dans git.
+.env
+.env.*
+.DS_Store

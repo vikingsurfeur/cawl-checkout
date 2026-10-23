@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cawl-checkout/statut",
+	"title": "Statut de l'inscription",
+	"category": "widgets",
+	"description": "État de l'inscription et du paiement après le retour de la page de paiement CAWL.",
+	"textdomain": "cawl-checkout",
+	"supports": {
+		"autoRegister": true,
+		"html": false,
+		"multiple": false
+	},
+	"render": "file:./render.php"
+}
